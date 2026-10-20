@@ -36,9 +36,9 @@ params:
     enabled: true
     title: 胡滨
     subtitle: 写点东西，记点东西。
-    # 头像：暂未上传，取消下面的注释并放入 static/avatar.jpg 即可显示
-    # imageUrl: /avatar.jpg
-    # imageTitle: 胡滨
+    # 头像：static/avatar.jpg（Muse 的头像 Jolly）
+    imageUrl: /avatar.jpg
+    imageTitle: 胡滨
     buttons:
       - name: 文章
         url: /posts/
