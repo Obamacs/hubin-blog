@@ -1,0 +1,9 @@
+{{/* 照片流 shortcode：自动把同一文章目录下的所有图片排成响应式网格。
+   用法：文章改成 page bundle 形式（index.md + 图片放在同一目录），正文中写 {{< gallery >}} */}}
+<div class="photo-gallery">
+  {{- range sort (.Page.Resources.ByType "image") "Name" }}
+  <a href="{{ .RelPermalink }}" target="_blank" rel="noopener" title="{{ .Name }}">
+    <img src="{{ .RelPermalink }}" alt="{{ .Name }}" loading="lazy">
+  </a>
+  {{- end }}
+</div>

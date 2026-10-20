@@ -43,6 +43,32 @@ hugo new content posts/my-new-post.md
 3. 把生成的 `<script>` 片段按 PaperMod 文档加入 `layouts/partials/comments.html`，
    并在 `hugo.yaml` 的 params 下加 `comments: true`。
 
+## 插入图片
+
+### 单张图片（简单版）
+把图片放进 `static/images/`，正文里写：
+
+```markdown
+![图片说明](/images/你的图片.jpg)
+```
+
+### 单张图片（推荐版，图片跟随文章）
+把文章改成文件夹形式：`content/posts/文章名/index.md`，图片直接放同一个文件夹里，正文写相对路径：
+
+```markdown
+![图片说明](photo1.jpg)
+```
+
+推荐这样组织：以后删文章时图片一起删掉，不会留垃圾文件。
+
+## 照片流文章（一排照片网格）
+
+1. 新建文件夹 `content/posts/照片流标题/`，里面放 `index.md` 和所有照片（jpg/png 都行）；
+2. `index.md` 正文里写一行 `{{< gallery >}}`，图片会自动按文件名顺序排成响应式网格，点任意一张看大图；
+3. 网格样式在 `assets/css/extended/gallery.css`，想改列数/高度改那里。
+
+> 图片建议：单张控制在 500KB 以内（手机照片先压缩一下），不然打开会慢。
+
 ## 目录结构
 
 ```
