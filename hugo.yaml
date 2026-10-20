@@ -1,7 +1,7 @@
 baseURL: https://hubin.me/
 languageCode: zh-cn
 locale: zh-cn
-title: 胡斌的博客
+title: 胡滨的博客
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -15,8 +15,8 @@ minify:
 
 params:
   env: production
-  description: 胡斌的个人博客
-  author: 胡斌
+  description: 胡滨的个人博客
+  author: 胡滨
   defaultTheme: auto
   ShowReadingTime: true
   ShowShareButtons: true
@@ -34,10 +34,10 @@ params:
   # 首页个人信息卡（Profile Mode）
   profileMode:
     enabled: true
-    title: 胡斌
+    title: 胡滨
     subtitle: 写点东西，记点东西。
     imageUrl: /avatar.jpg
-    imageTitle: 胡斌
+    imageTitle: 胡滨
     buttons:
       - name: 文章
         url: /posts/
