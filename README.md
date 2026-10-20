@@ -1,4 +1,4 @@
-# 胡斌的博客（hubin.me）
+# 胡滨的博客（hubin.me）
 
 Hugo + PaperMod 主题，部署在 Cloudflare Pages。
 
