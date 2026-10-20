@@ -1,0 +1,83 @@
+baseURL: https://hubin.me/
+languageCode: zh-cn
+locale: zh-cn
+title: 胡斌的博客
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  description: 胡斌的个人博客
+  author: 胡斌
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  TocOpen: false
+  disableSpecial1stPost: false
+  disableAnchoredHeadings: false
+  # 首页个人信息卡（Profile Mode）
+  profileMode:
+    enabled: true
+    title: 胡斌
+    subtitle: 写点东西，记点东西。
+    imageUrl: /avatar.jpg
+    imageTitle: 胡斌
+    buttons:
+      - name: 文章
+        url: /posts/
+      - name: 关于
+        url: /about/
+  socialIcons:
+    - name: github
+      url: https://github.com/
+    - name: email
+      url: mailto:hello@hubin.me
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archive
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 30
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 40
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON   # 搜索页需要
+
+taxonomies:
+  tag: tags
+  category: categories
